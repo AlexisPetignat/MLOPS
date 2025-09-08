@@ -6,6 +6,7 @@ FILE = "./regression.joblib"
 
 model = joblib.load(FILE)
 
+st.title("House Price Prediction")
 size = st.number_input("Insert a size")
 bedrooms = st.number_input("Insert a number of bedrooms")
 garden = st.checkbox("Does the house have a garden")
