@@ -26,6 +26,7 @@
                     pandas
                     numpy
                     joblib
+                    fastapi
                     matplotlib
                     scikit-learn
                     pytest
