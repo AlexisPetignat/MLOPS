@@ -24,7 +24,7 @@ jobs:
 
       - name: Pull and deploy
         run: |
-          sshpass -p ${{ secrets.SERVER_PASSWORD }} ssh ubuntu@4.210.225.87:/home/ubuntu/ap
+          sshpass -p ${{ secrets.SERVER_PASSWORD }} ssh ubuntu@4.210.225.87
           cd MLOPS
           git pull
           cd src
