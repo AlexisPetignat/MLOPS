@@ -1,0 +1,6 @@
+services:
+  deploy:
+    image: haalaikssy/docker-push-cringe:latest
+    restart: always
+    ports:
+      - "6339:6339"
