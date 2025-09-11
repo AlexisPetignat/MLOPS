@@ -5,6 +5,7 @@ COPY pyproject.toml .
 RUN uv sync
 
 COPY src ./src
+WORKDIR ./src
 
 EXPOSE 8080
-CMD ["uv", "run", "fastapi", "run", "--port", "6339"]
+CMD ["uv", "run", "fastapi", "run", "--port", "6339", "server.py"]
