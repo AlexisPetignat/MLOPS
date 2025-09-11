@@ -24,4 +24,4 @@ jobs:
 
       - name: Pull and deploy
         run: |
-          sshpass -p ${{ secrets.SERVER_PASSWORD }} ssh -t ubuntu@4.210.225.87 'cd ap/MLOPS ; git pull ; docker-compose up'
+          sshpass -p ${{ secrets.SERVER_PASSWORD }} ssh ubuntu@4.210.225.87 'cd ap/MLOPS ; git pull ; docker-compose up'
